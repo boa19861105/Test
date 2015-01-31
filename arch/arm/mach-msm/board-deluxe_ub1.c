@@ -133,13 +133,9 @@
 #include <linux/htc_irda.h>
 #endif
 
-#define MSM_PMEM_ADSP_SIZE         0x7800000
+#define MSM_PMEM_ADSP_SIZE         0x8600000
 #define MSM_PMEM_AUDIO_SIZE        0x4CF000
-#ifdef CONFIG_FB_MSM_HDMI_AS_PRIMARY
-#define MSM_PMEM_SIZE 0x8200000 
-#else
-#define MSM_PMEM_SIZE 0x8200000 
-#endif
+#define MSM_PMEM_SIZE              0x0 
 
 #ifdef CONFIG_MSM_MULTIMEDIA_USE_ION
 #define HOLE_SIZE		0x20000
